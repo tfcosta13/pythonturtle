@@ -12,7 +12,7 @@ def draw_art():
     brad = turtle.Turtle()
     brad.shape("turtle")
     brad.color("blue")
-    brad.speed(2)
+    brad.speed(10)
     for i in range(1,37):
         draw_square(brad)
         brad.right(10)
@@ -24,7 +24,7 @@ def draw_art():
 
     window.exitonclick()
 
-#draw_art()
+draw_art()
 
 def draw_form():
     window = turtle.Screen()
@@ -45,5 +45,4 @@ def draw_form():
 
     window.exitonclick()
 
-draw_form()
-    
+#draw_form()
