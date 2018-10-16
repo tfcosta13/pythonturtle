@@ -12,7 +12,7 @@ def draw_art():
     brad = turtle.Turtle()
     brad.shape("turtle")
     brad.color("blue")
-    brad.speed(2)
+    brad.speed(10)
     for i in range(1,37):
         draw_square(brad)
         brad.right(10)
@@ -32,18 +32,19 @@ def draw_form():
     #Create the turtle letter - Draw initials
     pen = turtle.Turtle()
     pen.color("white")
+    pen.speed(5)
 
     for i in range(1,37):
-        pen.forward(100)
+        pen.forward(50)
         pen.right(120)
         pen.forward(100)
-        pen.right(120)
+        pen.left(120)
+        pen.forward(50)
+        pen.left(120)
         pen.forward(100)
-        pen.right(120)
         pen.right(10)
         
 
     window.exitonclick()
 
 draw_form()
-    
